@@ -27,7 +27,8 @@ cd mvc-challenge-tech-blog
 
 npm install
 
-
+##Live Host::
+http://localhost:3000/
 
 ## Usage
 

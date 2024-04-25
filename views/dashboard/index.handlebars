@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Dashboard</h2>
+        {{#if posts.length}}
+            <ul>
+                {{#each posts}}
+                    <li>
+                        <h3>{{this.title}}</h3>
+                        <p>{{this.content}}</p>
+                        <p>Created on: {{this.createdAt}}</p>
+                        <p>
+                            <a href="/dashboard/edit-post/{{this.id}}">Edit</a>
+                            <form action="/dashboard/delete-post/{{this.id}}" method="post" style="display:inline;">
+                                <input type="submit" value="Delete">
+                            </form>
+                        </p>
+                    </li>
+                {{/each}}
+            </ul>
+        {{else}}
+            <p>No posts found.</p>
+        {{/if}}
+        <p><a href="/dashboard/new-post">Add New Post</a></p>
+        <p><a href="/">Back to Homepage</a></p>
+        <p><a href="/logout">Logout</a></p>
+    </div>
+</body>
+</html>

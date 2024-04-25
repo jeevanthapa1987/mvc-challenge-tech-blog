@@ -1,0 +1,32 @@
+{
+  "name": "mvc-challenge-tech-blog",
+  "version": "1.0.0",
+  "description": "This is a CMS-style blog site where users can create, read, update, and delete blog posts. It includes authentication features for user registration, login, and logout.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeevanthapa1987/mvc-challenge-tech-blog.git"
+  },
+  "author": "jeevan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeevanthapa1987/mvc-challenge-tech-blog/issues"
+  },
+  "homepage": "https://github.com/jeevanthapa1987/mvc-challenge-tech-blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-session-sequelize": "^7.1.7",
+    "express": "^4.19.2",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.18.0",
+    "inquirer": "^7.3.3",
+    "mysql2": "^3.9.7",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.37.3"
+  }
+}
